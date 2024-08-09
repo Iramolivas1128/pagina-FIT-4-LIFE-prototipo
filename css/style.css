@@ -131,53 +131,72 @@ footer{
 
 
 
-/* -------------INDEX---------------
+/* -------------PAGINA-RUTINAS---------------*/
 
-.index-main-grid-container{
-  
-    max-width: 1200px;
-    margin: auto;
+.main-rutinas {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.contenedor-titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.contenerdor-titulo h2 {
+    justify-content: center;
+    padding: 2%;
+}
+
+.main-rutinas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+
+.titulo-rutina {
+    color: aqua;
+}
+
+.main-rutinas p {
+    color: rgb(75, 63, 63);
+    font-size: 1.5em;
+}
+
+.main-rutinas .titulo-rutina {
+    font-size: 2em;
+    color: rgb(46, 38, 38);
+}
+
+.contenedor-rutina {
+    width: 30%;
+    height: 70vh;
+    border: 2px solid black;
+    border-radius: 2%;
     
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr 2fr 2fr;
-    grid-template-rows: 20vh 8vh 15vh 15vh 15vh 15vh ;
-    border: #9B5DE5 3px solid;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.img-rutina,.video-index{
-    height: 30px;
-    width: 30px;;
+.contenedor-rutina p {
+    font-size: 20px;
 }
 
-.index-video-container{
-    grid-column: 2/4;
-    grid-row: 1/2;
+.titulo-rutina {
+    font-size: 40px;
 }
 
-.index-txt-container{
-
-    grid-column: 2/4;
-    grid-row: 2/3;
-
+#img-rutina {
+    width: 60%;
+    height: 40%;
 }
 
-.main-rutina1-cont{
-    grid-column: 2/4;
-    grid-row: 3/4;
-    
-}
-
-.main-rutina2-cont{
-    grid-column: 2/4;
-    grid-row: 4/5;
-}
-
-.main-rutina3-cont{
-
-    grid-column: 2/4;
-    grid-row: 5/6;
-    
-}*/
 
 /* -------------PAGINA-TIENDA---------------*/
 
@@ -226,9 +245,17 @@ img.img-articulo {
     justify-content: space-around;
 }
 
+/* -------------PAGINA-BLOG---------------*/
 
+.img1-blog-container img{
+    width: 50%;
+    height: 50%;
+}
 
-
+.img2-blog-container img{
+    width: 50%;
+    height: 50%;
+}
 
 
 
