@@ -1,38 +1,10 @@
 *{
-    margin: 0px;;
+    margin: 0px;
+    border: 1px solid red;
 }
-
-body{
-    background-color: #1f2023;
-    color: #FDF7F7;
-}
-
-
-div.index-grid-container{ 
-    display: grid;
-    margin: auto;
-    grid-template-columns: repeat(4,2fr);
-    grid-template-rows: 14vh repeat(3, 8vh) 16vh 16vh 16vh 14vh ;
-    grid-template-areas:
-    "header header header header"
-    ". video-index video-index ."
-    ". video-index video-index ."
-    ". txt-index txt-index ."
-    ". img-rutina1 cont-rutina1 ."
-    ". img-rutina2 cont-rutina2 ."
-    ". img-rutina3 cont-rutina3 ."
-    "footer footer footer footer"
-    ;
-}
-
-
-/* -------------header general para la pagina---------------*/
 
 header{
-    grid-area: header;
     background-color: #9B5DE5 ;
-    width: 100%;
-    height: 100%;
 }
 
 header div.col-logo{
@@ -71,7 +43,22 @@ header div.col-logo h1.nombre-pagina{
 }
 
 /*header col2*/
+.nav-bar ul{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 8%;
+}
 
+.nav-bar li{
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color:#FDF7F7
+}
 
 /* header columna 3 */
 
@@ -85,51 +72,71 @@ div.contenedor-iconos{
 
 }
 
-.img-rutina{
-    width: 100px;
-    height: 100px;
+
+body{
+    background-color: #1f2023;
+    color: #FDF7F7;
 }
 
-div.index-video-container{
-   grid-area: video-index;
-   margin-top: 2%;
-   border: #F4F1F1 3px solid;
-}
+/*
 
-div.index-txt-container{
-    grid-area: txt-index;
-}
-
-div.img-r1-container{
-    grid-column: img-rutina1;
-}
-
-div.main-rutina1-cont{
-    grid-area: cont-rutina1;
-}
-
-div.img-r2-container{
-    grid-column: img-rutina2;
-}
-
-div.main-rutina2-cont{
-    grid-area: cont-rutina2;
-}
-
-div.img-r3-container{
-    grid-column: img-rutina3;
-}
-
-div.main-rutina3-cont{
-    grid-area: cont-rutina3;
-}
-
-footer{
-    grid-area: footer;
+div.index-grid-container{ 
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4,2fr);
+    grid-template-rows: 14vh repeat(3, 8vh) 16vh 16vh 16vh 14vh ;
+    grid-template-areas:
+    "header header header header"
+    ". video-index video-index ."
+    ". video-index video-index ."
+    ". txt-index txt-index ."
+    ". img-rutina1 cont-rutina1 ."
+    ". img-rutina2 cont-rutina2 ."
+    ". img-rutina3 cont-rutina3 ."
+    "footer footer footer footer"
+    ;
 }
 
 
+*/
 
+
+/* -------------header general para la pagina---------------*/
+
+.index-video-container{
+    display: inline-block;
+    align-items: center;
+    margin-left: 15%;
+}
+video.video-index{
+    width: 90%;
+    height: 80%;
+}
+
+.index-txt-container{
+    text-align: center;
+}
+
+.itc-t1{
+    font-size: 3em;
+}
+
+.index-img-rutina{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.index-img-rutina2{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.index-img-rutina3{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 /* -------------PAGINA-RUTINAS---------------*/
 
